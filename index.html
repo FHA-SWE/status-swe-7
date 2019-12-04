@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Status Meeting 7</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Spreadsheet -->
+		<script src="plugin/spreadsheet/ruleJS.all.full.min.js"></script>
+		<link rel="stylesheet" href="plugin/spreadsheet/spreadsheet.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img class="round" width="500px" height="500px" src="img/logo.png" alt="">
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Projektstatus 04.12.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Letzte Woche, 27.11.
+
+						- Beginn der Architektur -> 28.11.
+						- Unterschrift Lastenheft -> 29.11.
+						- Grobe Aufgabenverteilung -> 01.12.
+
+						<hr />
+
+						### Kommende Woche, 11.12.
+
+						- Meilensteine definieren -> 04.12.
+						- Aufgaben bearbeiten -> 04.12.
+
+					</textarea>
+				</section>
+				<section>
+					<h3>Komplikationen</h3>
+					<div style="display: flex; justify-content: space-between;">
+						<ul>
+							<li>Teamintern</li>
+						</ul>
+						<img align="right" src="img/ampel.png" alt="" style="margin: 0; background: none; border: none;">
+					</div>
+				</section>
+				<section>
+					<h3>Zeitaufwand Aktuelle Woche</h3>
+					<img src="img/aufwand.jpg" alt="">
+				</section>
+				<section>
+					<h3>Burn Down Chart</h3>
+					<canvas data-chart="line" max-height="500px">
+					<!--
+					{
+						"data": {
+						"labels": ["42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "1", "2", "3", "4"],
+						"datasets": [
+						{
+						"data":[19,28,93,58,30,18,50],
+						"label":"Wochenaufwand","backgroundColor":"rgba(20,220,220, 0)", "borderColor": "#004586"
+						},
+						{
+						"data":[656,628,535,402,372,354,304],
+						"label":"Restaufwand","backgroundColor":"rgba(220,120,120,0)", "borderColor": "#ff410e"
+						},
+						{
+						"data":[19,47,140,198,228,246,296],
+						"label":"Ist-Aufwand","backgroundColor":"rgba(220,120,120,0)", "borderColor": "#ffd52c"
+						},
+						{
+						"data":[675,675,675,402,372,354,304],
+						"label":"Gesamtaufwand","backgroundColor":"rgba(220,120,120,0)", "borderColor": "#569d1c"
+						}
+						]
+						},
+						"options": { "responsive": "true"}
+					}
+					-->
+					</canvas>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/chart/Chart.min.js' },
+					{ src: 'plugin/chart/csv2chart.js' },
+					{ src: 'plugin/spreadsheet/spreadsheet.js' },
+				]
+			});
+		</script>
+	</body>
+</html>
